@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+    width: 1000px;
+    @apply mx-auto rounded my-10 shadow-lg;
+}
+
+header {
+    @apply bg-indigo-600 rounded-t;
+    padding: 5px;
+    text-align: center;
+}
+
+header h1 {
+    display: inline;
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: white;
+}
+
+#section2 {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    @apply bg-gray-700;
+}
+
+#userinfo {
+    width: 300px;
+    color: white;
+    @apply mx-auto;
+    text-align: center;
+}
+
+#avatar {
+    width: 100px;
+    height: 100px;
+    @apply rounded-full
+        mx-auto;
+    overflow: hidden;
+}
+
+
+
+.user-name {
+    font-size: 1.3em;
+}
+
+.job-position {
+    font-size: 0.7em;
+}
+
+#section3 {
+    @apply mt-5 px-3;
+}
+
+#section3 > div{
+    @apply flex;
+}
+
+#section3 > div div {
+    @apply basis-1/2;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#story p {
+    @apply my-5;
+}
+
+#pinfo p {
+    @apply border-b-2 py-3;
+}
+
+footer {
+    text-align: center;
+}
+
+footer > div {
+    @apply columns-3 mt-5;
+    
+}
+footer > div img {
+    width:  80px;
+    @apply mx-auto mb-10;
+}
